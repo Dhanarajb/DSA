@@ -2,7 +2,7 @@ package Trees;
 
 import java.util.Scanner;
 
-public class BasicTree {
+public class BasicTree { // BasicTree is node
     int data;
     BasicTree left, right;
 
