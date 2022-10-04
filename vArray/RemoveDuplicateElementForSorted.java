@@ -1,4 +1,4 @@
-public class FindDuplicateElementForSorted {
+public class RemoveDuplicateElementForSorted {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 2, 3, 4, 5, 5 };
         int temp[] = new int[arr.length];

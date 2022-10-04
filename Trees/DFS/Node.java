@@ -2,7 +2,7 @@ package Trees.DFS;
 
 public class Node {
     int data;
-    Node left, right;
+    Node right, left;
 
     public Node(int item) {
         data = item;

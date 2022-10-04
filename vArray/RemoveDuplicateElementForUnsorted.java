@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FindDuplicateElementForUnsorted {
+public class RemoveDuplicateElementForUnsorted {
     public static void main(String[] args) {
         int[] arr = { 4, 2, 1, 4, 7, 9, 2, 3, 4, 2, };
 
