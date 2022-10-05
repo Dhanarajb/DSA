@@ -14,11 +14,11 @@ class Node {
 
 class Main {
     public static void InOrderIterative(Node root) {
-        Stack<Node> st = new Stack<>();
-        Node curr = root;
+        Stack<Node> st = new Stack<>(); // create empty stacl
+        Node curr = root; // start from the root node
 
-        while (!st.empty() || curr != null) {
-            if (curr != null) {
+        while (!st.empty() || curr != null) { // loop till stack is empty and curr is empty
+            if (curr != null) { // if curr is not equal to null
                 st.push(curr);
                 curr = curr.left;
             } else {
