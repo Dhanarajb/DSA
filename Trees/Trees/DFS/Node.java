@@ -1,5 +1,8 @@
 package Trees.DFS;
 
+import DFS.Node;
+
+// tree node class
 public class Node {
     int data;
     Node right, left;
@@ -11,18 +14,18 @@ public class Node {
 }
 
 class BinaryTree {
-    Node root;
+    Node root; // main root
 
-    BinaryTree() {
-        root = null;
-    }
+    // BinaryTree() {
+    // root = null;
+    // }
 
     void preOrder(Node node) {
         if (node == null)
             return;
-        System.out.print(node.data + " ");
-        preOrder(node.left);
-        preOrder(node.right);
+        System.out.print(node.data + " ");// traverse root
+        preOrder(node.left); // traverse left
+        preOrder(node.right); // traverse right
     }
 
     void inOrder(Node node) {

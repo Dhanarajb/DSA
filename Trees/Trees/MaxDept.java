@@ -20,10 +20,7 @@
 
 // int lh = MaxDept(root.left);
 // int rh = MaxDept(root.right);
-// if (lh > rh)
-// return (lh + 1);
-// else
-// return (rh + 1);
+// return 1 + Math.max(lh, rh);
 
 // }
 

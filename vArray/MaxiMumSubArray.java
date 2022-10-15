@@ -5,18 +5,17 @@ public class MaxiMumSubArray {
     }
 
     public static int SubArray(int[] arr) {
-        int sum = 0;
-        int max = arr[0];
+        int maxsum = Integer.MIN_VALUE; // it will take any value
+        int cursum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
-            if (sum > max) {
-                max = sum;
-            }
-            if (sum < 0) {
-                sum = 0;
+            cursum += arr[i];
+            if (cursum > maxsum) {
+                maxsum = cursum;
+            } else {
+                cursum = 0;
             }
         }
-        return max;
+        return maxsum;
     }
 
 }

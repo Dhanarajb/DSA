@@ -1,4 +1,4 @@
-package Trees.DFS;
+package DFS;
 
 import java.util.Stack;
 
@@ -18,14 +18,14 @@ class Main {
             return;
         }
 
-        Stack<Node> stack = new Stack<>();
-        stack.push(root);
+        Stack<Node> stack = new Stack<>();// create the stack for hold(treenode) the additional information
+        stack.push(root); // add the root 1
 
         while (!stack.empty()) // loop travell till stack is empty
         {
-            Node curr = stack.pop();
+            Node curr = stack.pop(); // popped that root
 
-            System.out.print(curr.data + " ");
+            System.out.print(curr.data + " "); // print that root
 
             if (curr.right != null) {
                 stack.push(curr.right);

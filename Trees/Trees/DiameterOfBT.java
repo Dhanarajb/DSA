@@ -13,19 +13,18 @@ class Node {
 
 class Main {
     public static int getDiameter(Node root) {
-        height(root);
-        return res;
+        height(root, maxi);
+        return maxi;
     }
 
-    static int res = 0;
+    static int maxi = 0;
 
-    public static int height(Node root) {
+    public static int height(Node root, int maxi) {
         if (root == null)
             return 0;
 
-        int lh = height(root.left);
-        int rh = height(root.right);
-        res = Math.max(res, lh + rh);
+        int lh = height(root.left, maxi);
+        int rh = height(root.right, maxi);
         return Math.max(lh, rh) + 1;
 
     }
